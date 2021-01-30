@@ -39,3 +39,8 @@ git branch -a
 git branch -d feature/2-add-new-student
 git remote prune origin
 ```
+
+## Database
+Server: pgsql.hrz.tu-chemnitz.de
+User: schoolmsdb_rw
+Password: evaiw2Ae
