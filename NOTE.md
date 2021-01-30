@@ -41,6 +41,6 @@ git remote prune origin
 ```
 
 ## Database
-Server: pgsql.hrz.tu-chemnitz.de
-User: schoolmsdb_rw
-Password: evaiw2Ae
+    Server: pgsql.hrz.tu-chemnitz.de
+    User: schoolmsdb_rw
+    Password: evaiw2Ae
