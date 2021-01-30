@@ -10,5 +10,6 @@ class AddStudent{
         student.name = "Bob";
 
         // Code Save
+        System.out.println(student.id + " " + student.name);
     }
 }
