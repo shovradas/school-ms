@@ -45,3 +45,6 @@ git remote prune origin
     Database: schoolmsdb
     User: schoolmsdb_rw
     Password: evaiw2Ae
+
+## Email
+schoolms2021
