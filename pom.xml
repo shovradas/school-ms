@@ -20,41 +20,68 @@
 		<java.version>1.8</java.version>
 	</properties>
 	<modules>
+		<module>xcollabs-framework</module>
+		<module>schoolms-framework</module>
 		<module>schoolms-entities</module>
+		<module>schoolms-data</module>
 		<module>schoolms-service</module>
+		<module>schoolms-infrastructure</module>
+        <module>schoolms-infrastructure-data-jpa</module>
+		<module>schoolms-service-impl</module>
 		<module>schoolms-api</module>
-		<module>schoolms-service-interfaces</module>
-<!--        <module>schoolms-repository</module>-->
-		<module>schoolms-repository-interfaces</module>
 	</modules>
 
 	<dependencyManagement>
 		<dependencies>
+
 			<dependency>
 				<groupId>com.xcollabs</groupId>
-				<artifactId>schoolms-service</artifactId>
+				<artifactId>xcollabs-framework</artifactId>
+				<version>0.0.1-SNAPSHOT</version>
+			</dependency>
+
+			<dependency>
+				<groupId>com.xcollabs</groupId>
+				<artifactId>schoolms-framework</artifactId>
 				<version>${parent.version}</version>
 			</dependency>
+
 			<dependency>
 				<groupId>com.xcollabs</groupId>
 				<artifactId>schoolms-entities</artifactId>
 				<version>${parent.version}</version>
 			</dependency>
+
 			<dependency>
 				<groupId>com.xcollabs</groupId>
-				<artifactId>schoolms-service-interfaces</artifactId>
+				<artifactId>schoolms-service</artifactId>
 				<version>${parent.version}</version>
 			</dependency>
-<!--			<dependency>-->
-<!--				<groupId>com.xcollabs</groupId>-->
-<!--				<artifactId>schoolms-repository</artifactId>-->
-<!--				<version>${parent.version}</version>-->
-<!--			</dependency>-->
+
 			<dependency>
 				<groupId>com.xcollabs</groupId>
-				<artifactId>schoolms-repository-interfaces</artifactId>
+				<artifactId>schoolms-data</artifactId>
 				<version>${parent.version}</version>
 			</dependency>
+
+			<dependency>
+				<groupId>com.xcollabs</groupId>
+				<artifactId>schoolms-infrastructure</artifactId>
+				<version>${parent.version}</version>
+			</dependency>
+
+			<dependency>
+				<groupId>com.xcollabs</groupId>
+				<artifactId>schoolms-infrastructure-data-jpa</artifactId>
+				<version>${parent.version}</version>
+			</dependency>
+
+			<dependency>
+				<groupId>com.xcollabs</groupId>
+				<artifactId>schoolms-service-impl</artifactId>
+				<version>${parent.version}</version>
+			</dependency>
+
 		</dependencies>
 	</dependencyManagement>
 </project>

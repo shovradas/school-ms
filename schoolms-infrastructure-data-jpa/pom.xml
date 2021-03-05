@@ -8,22 +8,31 @@
         <artifactId>schoolms</artifactId>
         <groupId>com.xcollabs</groupId>
         <version>0.0.1-SNAPSHOT</version>
-    </parent>    
+    </parent>
 
-    <artifactId>schoolms-entities</artifactId>
-    <name>schoolms-entities</name>
-    <description>School Management System: Domain (or Entity) Layer</description>
+    <artifactId>schoolms-infrastructure-data-jpa</artifactId>
+    <name>schoolms-infrastructure-data-jpa</name>
+    <description>School Management System: JPA implementation for Data Layer</description>
 
     <dependencies>
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-data-jpa</artifactId>
         </dependency>
-        <dependency>
-            <groupId>org.postgresql</groupId>
-            <artifactId>postgresql</artifactId>
-            <version>42.2.19</version>
-        </dependency>
-    </dependencies>
 
+        <dependency>
+            <groupId>com.xcollabs</groupId>
+            <artifactId>schoolms-entities</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>com.xcollabs</groupId>
+            <artifactId>schoolms-entities</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.xcollabs</groupId>
+            <artifactId>schoolms-data</artifactId>
+        </dependency>
+
+    </dependencies>
 </project>

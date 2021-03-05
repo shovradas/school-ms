@@ -34,13 +34,27 @@
 
 		<dependency>
 			<groupId>com.xcollabs</groupId>
-			<artifactId>schoolms-service</artifactId>
-			<scope>compile</scope>
+			<artifactId>schoolms-data</artifactId>
 		</dependency>
 
 		<dependency>
 			<groupId>com.xcollabs</groupId>
-			<artifactId>schoolms-service-interfaces</artifactId>
+			<artifactId>schoolms-service</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>com.xcollabs</groupId>
+			<artifactId>schoolms-infrastructure</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>com.xcollabs</groupId>
+			<artifactId>schoolms-service-impl</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>com.xcollabs</groupId>
+			<artifactId>schoolms-infrastructure-data-jpa</artifactId>
 		</dependency>
 	</dependencies>
 
