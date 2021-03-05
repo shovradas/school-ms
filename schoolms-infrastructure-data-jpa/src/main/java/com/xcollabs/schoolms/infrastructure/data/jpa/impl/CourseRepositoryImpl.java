@@ -1,17 +1,13 @@
-package com.xcollabs.schoolms.infrastructure.data.jpa;
+package com.xcollabs.schoolms.infrastructure.data.jpa.impl;
 
 import com.xcollabs.schoolms.data.CourseRepository;
 import com.xcollabs.schoolms.entities.Course;
-import org.springframework.data.repository.CrudRepository;
+import com.xcollabs.schoolms.infrastructure.data.jpa.CourseRepositoryJpa;
 import org.springframework.stereotype.Component;
-import org.springframework.stereotype.Repository;
 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
-
-@Repository
-interface CourseRepositoryJpa extends CrudRepository<Course, Integer> {}
 
 @Component
 public class CourseRepositoryImpl implements CourseRepository {
